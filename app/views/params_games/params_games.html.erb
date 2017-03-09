@@ -1,2 +1,5 @@
 <h4>Hey, your name is:</h4>
-<p><%= @user_name %></p>
+<% if @user_name[0] == "a" or "A"%>
+<p> <%= @a_name %> </p>
+<% end %>
+<p><%= @user_name.upcase %></p>
