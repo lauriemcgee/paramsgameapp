@@ -11,14 +11,14 @@ class ParamsGamesController < ApplicationController
   
   def params_games_numbers_method
     @user_number = params["mynumber"].to_i
-    @random_number = 36
+    random_number = 36
     if @user_number == nil
       @message = "You haven't entered anything yet!"
-    elsif @user_number == @random_number
+    elsif @user_number == random_number
       @message = "You won!"
-    elsif @user_number < @random_number
+    elsif @user_number < random_number
       @message = "Higher guess, please."
-    elsif @user_number > @random_number
+    elsif @user_number > random_number
       @message = "Lower guess, please."
     end
     render "params_games_numbers.html.erb"
