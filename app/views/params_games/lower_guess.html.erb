@@ -1,0 +1,7 @@
+<h1> <%= @message %></h1>
+<%= form_tag "guess_result_url", method: :post do %>
+<div>
+Enter a number: <input type="text" name="form_number">
+</div>
+<input type="submit" value="Submit!">
+<% end %>

@@ -1,0 +1,15 @@
+<h4> My form (Normal HTML) </h4>
+<form action="/form_result_url" method="post">
+<div>
+Enter message: <input tupe="text" name="form_message">
+</div>
+<input type="submit" value="Submit message!">
+</form>
+
+<h4> My form (Rails HTML) </h4>
+<%= form_tag "form_result_url", method: :post do %>
+<div>
+Enter message: <input type="text" name="form_message">
+</div>
+<input type="submit" value="Submit message!">
+ <% end %>
