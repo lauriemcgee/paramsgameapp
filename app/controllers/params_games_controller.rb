@@ -23,6 +23,10 @@ class ParamsGamesController < ApplicationController
     end
     render "params_games_numbers.html.erb"
   end
+  def home_method
+    @url_variable = params["this_is_a_variable"]
+    render "homepage.html.erb"
+  end
 end
 
 
